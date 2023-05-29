@@ -1,0 +1,96 @@
+/* °° fonts import °° */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/new-super-mario-font-u');
+
+/* * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+} */
+
+body {
+   font-family: 'New Super Mario Font U', sans-serif;
+   color: #faebd7;
+   background-color: #090909;
+   text-shadow: 2px 2px #090909;
+   display: grid;
+   place-items: center;
+   height: 100vh;
+   line-height: 1.5;
+}
+.game{
+   max-width: 440px;
+   display: grid;
+   align-items: center;
+   gap: 50px;
+   padding: 75px 25px;
+   background: url("./img/bgImg.png");
+   background-size: cover;
+   background-position: bottom;
+   text-align: center;
+}
+.health-point{
+   position: relative;
+   width: 200px;
+   height: 25px;
+   border: 2px solid #faebd7;
+   margin-left: auto;
+}
+.health-point-number{
+   position: absolute;
+   font-size: 1.5rem;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.health-point-bar{
+   width: 100%;
+   height: 100%;
+   background: #008000;
+}
+.game-title{
+   font-size: 2.5rem;
+}
+.game-number{
+   display: grid;
+   place-items: center;
+   width: 75px;
+   height: 75px;
+   font-size: 3rem;
+   color: #ce4b05;
+   margin: 20px auto;
+   background: url(./img/box.png);
+   background-size: cover;
+}
+.game-return{
+   font-size: 1.5rem;
+}
+
+.game footer{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 10px;
+}
+input, button{
+   background: none;
+   font: inherit;
+   color: inherit;
+   border: none;
+   font-size: 1.3rem;
+}
+.game-guess{
+   grid-column: 1/-1;
+   padding: 5px;
+   border: 2px solid #faebd7;
+}
+.game-button{
+   padding: 10px 15px;
+   box-shadow: 5px 5px #090909;
+   cursor: pointer;
+}
+.game-button-play{
+   background-color: #008000;
+}
+.game-button-reset{
+   background-color: #0e0eff;
+}
