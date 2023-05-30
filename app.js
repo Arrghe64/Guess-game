@@ -54,12 +54,12 @@ const playGame = () => {
             gameHealth -= 20;
             healthPointBar.style.width = `${gameHealth}%`;
             updateData(healthPointNumber, `${gameHealth}%`);
-            if(healthPointBar < 50){
-               healthPointNumber.style.background = "red";
+
+            // mise à jour de la barre de vie.
+            if(gameHealth < 50){
+               healthPointBar.style.background = "red";
             }
-            // if(healthPointNumber < 50){
-            //    healthPointBar.style.background = "red";
-            // }
+
          } else {
             updateData(gameReturn, "Game over!");
             gameHealth = 0;
